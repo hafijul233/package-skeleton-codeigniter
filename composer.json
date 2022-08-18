@@ -1,0 +1,67 @@
+{
+    "name": "hafijul233/codeigniter-modules",
+    "description": "This is my package codeigniter-modules",
+    "keywords": [
+        "hafijul233",
+        "codeigniter-modules"
+    ],
+    "homepage": "https://github.com/hafijul233/codeigniter-modules",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mohammad Hafijul Islam",
+            "email": "hafijul233@gmail.com",
+            "homepage": "https://hafijulislam.me",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.4||^8.0",
+        "codeigniter4/framework": "^4.1"
+    },
+    "require-dev": {
+        "codeigniter/coding-standard": "^1.1",
+        "fakerphp/faker": "^1.9",
+        "mikey179/vfsstream": "^1.6",
+        "nexusphp/cs-config": "^3.1",
+        "nexusphp/tachycardia": "^1.0",
+        "phpstan/extension-installer": "^1.1",
+        "phpstan/phpstan": "^1.0",
+        "phpstan/phpstan-deprecation-rules": "^1.0",
+        "phpstan/phpstan-phpunit": "^1.0",
+        "phpunit/phpunit": "^9.3",
+        "roave/security-advisories": "dev-latest",
+        "friendsofphp/php-cs-fixer": "^3.0",
+        "pestphp/pest": "^1.20"
+    },
+    "autoload": {
+        "psr-4": {
+            "Hafijul\\Module\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Hafijul\\Module\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/pest",
+        "test-coverage": "vendor/bin/pest --coverage",
+        "format": "vendor/bin/php-cs-fixer fix --allow-risky=yes --verbose --ansi --using-cache=no",
+        "analyze": "phpstan analyze",
+        "ci": [
+            "Composer\\Config::disableProcessTimeout",
+            "@analyze",
+            "@format"
+        ]
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "phpstan/extension-installer": true,
+            "pestphp/pest-plugin": true
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
