@@ -1,8 +1,8 @@
-# Codeigniter4 Modules
+# Package Skeleton CodeIgniter4
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/hafijul233/codeigniter-modules.svg?style=flat-square)](https://packagist.org/packages/hafijul233/codeigniter-modules)
-[![Tests](https://github.com/hafijul233/codeigniter-modules/actions/workflows/run-tests.yml/badge.svg?branch=main)](https://github.com/hafijul233/codeigniter-modules/actions/workflows/run-tests.yml)
-[![Total Downloads](https://img.shields.io/packagist/dt/hafijul233/codeigniter-modules.svg?style=flat-square)](https://packagist.org/packages/hafijul233/codeigniter-modules)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/hafijul233/package-skeleton-codeigniter.svg?style=flat-square)](https://packagist.org/packages/hafijul233/package-skeleton-codeigniter)
+[![Tests](https://github.com/hafijul233/package-skeleton-codeigniter/actions/workflows/run-tests.yml/badge.svg?branch=main)](https://github.com/hafijul233/package-skeleton-codeigniter/actions/workflows/run-tests.yml)
+[![Total Downloads](https://img.shields.io/packagist/dt/hafijul233/package-skeleton-codeigniter.svg?style=flat-square)](https://packagist.org/packages/hafijul233/package-skeleton-codeigniter)
 [![](https://github.com/organization/project/workflows/PHPUnit/badge.svg)](https://github.com/organization/project/actions/workflows/phpunit.yml)
 [![](https://github.com/organization/project/workflows/PHPStan/badge.svg)](https://github.com/organization/project/actions/workflows/phpstan.yml)
 [![](https://github.com/organization/project/workflows/Deptrac/badge.svg)](https://github.com/organization/project/actions/workflows/deptrac.yml)
@@ -12,25 +12,28 @@ This is where your description should go. Try and limit it to a paragraph or two
 
 ## Support us
 
-[<img src="https://github-ads.s3.eu-central-1.amazonaws.com/codeigniter-modules.jpg?t=1" width="419px" />](https://spatie.be/github-ad-click/codeigniter-modules)
-
 We invest a lot of resources into creating [best in class open source packages](https://spatie.be/open-source). You can support us by [buying one of our paid products](https://spatie.be/open-source/support-us).
 
 We highly appreciate you sending us a postcard from your hometown, mentioning which of our package(s) you are using. You'll find our address on [our contact page](https://spatie.be/about-us). We publish all received postcards on [our virtual postcard wall](https://spatie.be/open-source/postcards).
 
 ## Installation
 
-You can install the package via composer:
+You can clone it from git bash/cli terminal:
 
 ```bash
-composer require hafijul233/codeigniter-modules
+git clone https://github.com/hafijul233/package-skeleton-codeigniter.git
+cd package-skeleton-codeigniter
+git remote set-url origin [https://github.com/[user-name]/[repo-name].git]
 ```
+
+OR 
+
+** You can click this use template button above to make copy of this repo on and clone it.
 
 ## Usage
 
 ```php
-$skeleton = new Hafijul\Module();
-echo $skeleton->echoPhrase('Hello, Hafijul!');
+php configure.php
 ```
 
 ## Testing
